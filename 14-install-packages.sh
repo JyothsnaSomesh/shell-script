@@ -33,7 +33,7 @@ fi
 # git mysql postfix net-tools
 # package=git for first time
 
-for package in $0
+for package in $@
 do
    yum list installed $package &>>$LOGFILE
    if [ $? -ne 0 ]
