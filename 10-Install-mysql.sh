@@ -13,6 +13,7 @@ fi
 yum install mysql -y
 
 if [ $? -ne 0 ]
+then
    echo "ERROR: installing Mysql is FAILURE"
    exit 1
 else
@@ -22,6 +23,7 @@ else
  yum install git -y
 
 if [ $? -ne 0 ]
+then
    echo "ERROR: installing git is FAILURE"
    exit 1
 else
