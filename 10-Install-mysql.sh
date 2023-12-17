@@ -18,3 +18,12 @@ if [ $? -ne 0 ]
 else
    echo "installing mysql is SUCCESS"
  fi
+
+ yum install git -y
+
+if [ $? -ne 0 ]
+   echo "ERROR: installing git is FAILURE"
+   exit 1
+else
+   echo "installing git is SUCCESS"
+ fi 
